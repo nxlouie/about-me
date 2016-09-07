@@ -1,4 +1,6 @@
 class HeartsController < ApplicationController
+  before_filter :require_login, only: [:destroy]
+  
   def create
     @heart = Heart.new(heart_params)
   

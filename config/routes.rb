@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   resources :posts
   resources :hearts, only: :create
+  resources :authors
+  resources :author_sessions, only: [ :new, :create, :destroy ]
+
+  get 'login'  => 'author_sessions#new'
+  get 'logout' => 'author_sessions#destroy'
   get 'about' => 'pages#about'
 
   root 'pages#welcome'
