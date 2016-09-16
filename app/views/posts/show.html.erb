@@ -1,5 +1,17 @@
 <% if notice.present? %>
-	<p class="alert alert-info"><%= notice %></p>
+  <p class="alert alert-info"><%= notice %></p>
 <% end %>
 
-<%= render 'post', post: @post %>
+<% content_for :banner do %>
+      style="background-image: url('../assets/post-bg.jpg')"
+    <% end %>
+
+<% content_for :header do %>
+  <h1>Post Title</h1>
+  <hr class="small">
+  <span class="subheading">Post View zzzzzz</span>
+<% end %>
+
+<% content_for :body do%>
+  <%= render 'post', post: @post %>
+<% end %>

@@ -1,7 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Posts</h1>
+    <% content_for :banner do %>
+        style="background-image: url('assets/home-bg.jpg')"
+    <% end %>
 
+    <% content_for :header do %>
+        <h1>Manage Posts</h1>
+        <hr class="small">
+        <span class="subheading">No one should see this but me......</span>
+    <% end %>
+
+
+<% content_for :body do %>
 <table class="table">
   <thead>
     <tr>
@@ -27,3 +37,4 @@
 <br>
 
 <%= link_to 'New Post', new_post_path %>
+<% end %>

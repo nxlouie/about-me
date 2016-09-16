@@ -1,0 +1,21 @@
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <% content_for :banner do %>
+        style="background-image: url('assets/contact-bg.jpg')"
+    <% end %>
+
+    <% content_for :header do %>
+        <h1>Blog</h1>
+            <hr class="small">
+            <span class="subheading">Tech Life and Stuff</span>
+    <% end %>
+
+    <!-- Main Content -->
+    <% content_for :body do %>
+    <% @posts.each do |post| %>
+
+      <%= render 'posts/post', post: post %>
+      <br><br><br><br>
+    <% end %>
+    <% end %>
+  <hr>

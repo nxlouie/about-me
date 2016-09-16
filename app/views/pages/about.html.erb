@@ -1,9 +1,19 @@
-<h1>About</h1>
+	<% content_for :banner do %>
+		style="background-image: url('assets/home-bg.jpg')"
+	<% end %>
+
+  <% content_for :header do %>
+    <h1>About This Site</h1>
+    <hr class="small">
+    <span class="subheading">Haha</span>
+  <% end %>
 
 
-<p>
+    <% content_for :body do %>
+    <p>
 	This app was built with Ruby on Rails and a touch of Bootstrap, and hosted on Heroku.
 	<br/><br/>
 
 	Special Thanks to <%= link_to "The Odin Project", "http://www.theodinproject.com" %> and Tal Safran's <%= link_to "Ruby on Rails class on Skillshare", "http://skillshare.talsafran.com" %> for being great resources on learning web development.
 </p>
+<% end %>

@@ -1,5 +1,23 @@
-<% @posts.each do |post| %>
-	<%= render 'posts/post', post: post %>	
 
-	<br><br><br><br>
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+
+<% content_for :banner do %>
+    style="background-image: url('assets/about-bg.jpg')"
+<% end %>
+
+<% content_for :header do %>
+  <h1>Nathan Louie</h1>
+  <hr class="small">
+  <span class="subheading">Computer Science Student At the University of Michigan</span>
+<% end %>
+
+
+<!-- Main Content -->
+<% content_for :body do %>
+<div>
+    <div>
+      <p>This Site is under Construction!</p>
+    </div>
+</div>
 <% end %>
