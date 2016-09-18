@@ -17,6 +17,10 @@
 //= require bootstrap.min
 
 
+h2 {
+    text-align: center;
+}
+
 .footer {
     position: absolute;
     bottom: 0;

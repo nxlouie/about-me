@@ -3,13 +3,14 @@
 <!-- Set your background image for this header on the line below. -->
 
 <% content_for :banner do %>
-    style="background-image: url('assets/about-bg.jpg')"
+    style="background-image: url('assets/coffee.jpg')"
 <% end %>
 
 <% content_for :header do %>
+  <img src="assets/me.jpg" class="img-circle" alt="This is me" width="175" height="175">
   <h1>Nathan Louie</h1>
   <hr class="small">
-  <span class="subheading">Computer Science Student At the University of Michigan</span>
+  <span class="subheading">Software Developer</span>
 <% end %>
 
 
@@ -17,22 +18,27 @@
 <% content_for :body do %>
 <div>
     <div>
-      <p> This site is still under construction! </p>
-      <h2>Objective</h2>
-      <p>Third year Computer Science undergraduate student at the University of Michigan with a minor in Sociology. Seeking a high impact summer internship for Summer 2017 that I will learn a lot from.</p>
+      <h2>About Me</h2>
+      <p>Junior, Pursuing a Bachelor's Degree in Computer Science at the <a href="http://umich.edu/" target="_blank">University of Michigan</a>. Seeking a high impact internship for Summer 2017.</p>
+
+      <p>Here is my <a href="assets/Louie_Nathan_Resume.pdf" target="_blank">Resume</a>!</p>
 
       <p>I am passionate about Computer Science because of the innate amount of collaboration involved in the discipline. I appreciate the idea that writing good, reusable code involves both in-depth technical knowledge, and teamwork skills in order to work effectively.</p>
+
+      <br>
 
       <h2>Languages and Frameworks</h2>
       <li>Curriculum: C++, C, Python, SQL</li>
       <li>Work Experience: C#, VBA, VB.NET</li>
       <li>Hobby: JavaScript, Ruby on Rails</li>
 
-      <h2>Other</h2>
-      <li>Learning Web Development in free time</li>
+      <br><br>
+
+      <h2>Activities & Involvement</h2>
+      <li><a href="http://www.theodinproject.com/" target="_blank">Learning Web Development</a> in my free time</li>
       <li>Vice President of Theta Tau, Professional Engineering Fraternity</li>
       <li>Member of Club Swimming at the University of Michigan</li>
-      <li>History Buff & avid reader</li>
+      <li>History buff & avid reader</li>
     </div>
 </div>
 <% end %>
